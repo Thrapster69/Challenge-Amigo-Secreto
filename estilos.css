@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Racing+Sans+One&display=swap");
+
+body {
+  font-family: 'Fugaz one', sans-serif;
+  background-color: #fcf2e0;
+  color: #3b2c24;
+  margin: 0;
+  padding: 20px;
+}
+
+.contenedor {
+  background: #fffaf0;
+  border: 5px solid #3b2c24;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  font-family: 'Racing Sans One', cursive;
+  text-align: center;
+  color: #a81d1d;
+  text-shadow: 2px 2px #ffe2b3;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 18px;
+  border: 3px solid #3b2c24;
+  border-radius: 10px;
+  font-family: 'Freckle Face', cursive;
+  background-color: #fff0d6;
+  color: #3b2c24;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: 'Racing Sans One', cursive;
+  border: 3px solid #3b2c24;
+  border-radius: 12px;
+  background-color: #e74c3c;
+  color: #fffde6;
+  cursor: pointer;
+  box-shadow: 2px 2px #3b2c24;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 4px 4px #3b2c24;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #ffe8c2;
+  border: 2px dashed #3b2c24;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.resultado {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 25px;
+  color: #a81d1d;
+  background-color: #fff0d6;
+  border: 3px dotted #3b2c24;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .formulario {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
